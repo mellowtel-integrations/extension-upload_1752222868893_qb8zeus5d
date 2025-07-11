@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Livescore",
+  "version": "21.0",
+  "description": "Livescores on your browser!!",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://api.football-data.org/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "12.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}
